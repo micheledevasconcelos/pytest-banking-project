@@ -29,7 +29,14 @@ class ListCustomerPage(PageObject):
         list = self.driver.find_elements(By.TAG_NAME, 'tr')
         return len(list) > 1
 
-#TODO
+    def is_customer_not_listed(self):
+        self.wait_visible_element(By.TAG_NAME, 'tbody')
+        list = self.driver.find_elements(By.TAG_NAME, 'tr')
+        return len(list) > 0
+
+
     def delete_customer(self):
-        self.wait_visible_element(By.XPATH, '//button[text()="Delete"]')
-        self.driver.find_element(By.XPATH, '//button[text()="Delete"]').click()
+        ##self.wait_visible_element(By.XPATH, '//button[text()="Delete"]', 5)
+        ##self.driver.find_element(By.XPATH, '//button[text()="Delete"]').click()
+        self.wait_visible_element(By.XPATH, '//button[@ng-click="deleteCust(cust)"]', 5)
+        self.driver.find_element(By.XPATH, '//button[@ng-click="deleteCust(cust)"]').click()
