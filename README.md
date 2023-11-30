@@ -5,9 +5,13 @@ Cenários mapeados:
 test_add_customer
 
 test_search_customer
+
 test_open_account
+
 test_list_transactions
+
 test_make_deposit
+
 test_make_withdrawl
 
 
