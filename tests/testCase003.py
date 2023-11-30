@@ -1,10 +1,5 @@
-import time
-
 import pytest
 
-from pages.AddCustomerPage import AddCustomerPage
-from pages.ListCustomerPage import ListCustomerPage
-from pages.LoginPage import LoginPage
 from pages.OpenAccountPage import OpenAccountPage
 
 

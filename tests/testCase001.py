@@ -1,9 +1,6 @@
-import time
-
 import pytest
 
 from pages.AddCustomerPage import AddCustomerPage
-from pages.LoginPage import LoginPage
 
 
 class TestCase001:
