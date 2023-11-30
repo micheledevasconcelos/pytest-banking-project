@@ -1,6 +1,6 @@
 # eta-testes-sistema-banking-project
 
-#Cenários mapeados:
+# Cenários mapeados:
 
 test_add_customer
 
