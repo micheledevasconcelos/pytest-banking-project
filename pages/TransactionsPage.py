@@ -26,3 +26,12 @@ class TransactionsPage(PageObject):
         picklist = self.driver.find_element(By.ID, 'accountSelect')
         picklist.click()
         picklist.find_element(By.XPATH, '//option[@label=' + account + ']').click()
+
+    def reset_extract(self):
+        self.wait_visible_element(By.XPATH, '//button[text()="Reset"]', 5)
+        self.driver.find_element(By.XPATH, '//button[text()="Reset"]').click()
+
+    def is_transactions_not_listed(self):
+        self.wait_visible_element(By.TAG_NAME, 'tbody')
+        list = self.driver.find_elements(By.TAG_NAME, 'tr')
+        return len(list) > 0

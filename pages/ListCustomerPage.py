@@ -36,7 +36,5 @@ class ListCustomerPage(PageObject):
 
 
     def delete_customer(self):
-        ##self.wait_visible_element(By.XPATH, '//button[text()="Delete"]', 5)
-        ##self.driver.find_element(By.XPATH, '//button[text()="Delete"]').click()
         self.wait_visible_element(By.XPATH, '//button[@ng-click="deleteCust(cust)"]', 5)
         self.driver.find_element(By.XPATH, '//button[@ng-click="deleteCust(cust)"]').click()
