@@ -15,7 +15,10 @@ test_make_deposit
 test_make_withdrawl
 
 
-extra:
+# extra:
+
 test_add_and_deposit
+
 test_add_and_search
+
 test_add_and_withdrawl
