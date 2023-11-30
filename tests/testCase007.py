@@ -14,5 +14,4 @@ class TestCase007:
         listCust_p.open_customer_list_menu()
         listCust_p.search_customer(name)
         listCust_p.delete_customer()
-        time.sleep(5)
         assert listCust_p.is_customer_not_listed(), 'Customer found!'
