@@ -1,15 +1,7 @@
-import time
-
 import pytest
 
 from pages.AddCustomerPage import AddCustomerPage
-from pages.DepositPage import DepositPage
-from pages.HomePage import HomePage
 from pages.ListCustomerPage import ListCustomerPage
-from pages.LoginPage import LoginPage
-from pages.OpenAccountPage import OpenAccountPage
-from pages.TransactionsPage import TransactionsPage
-from pages.WithdrawlPage import WithdrawlPage
 
 
 class TestCaseAddAndRemove:

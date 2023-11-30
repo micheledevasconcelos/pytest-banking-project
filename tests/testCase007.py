@@ -2,9 +2,7 @@ import time
 
 import pytest
 
-from pages.AddCustomerPage import AddCustomerPage
 from pages.ListCustomerPage import ListCustomerPage
-from pages.LoginPage import LoginPage
 
 
 class TestCase007:
