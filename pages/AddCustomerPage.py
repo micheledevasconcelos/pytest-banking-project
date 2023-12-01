@@ -33,3 +33,11 @@ class AddCustomerPage(PageObject):
     def is_customer_added(self):
         message = self.driver.switch_to.alert.text
         return 'Customer added successfully' in message
+
+    def is_not_customer_added(self):
+        message = self.driver.switch_to.alert.text
+        return 'Customer may be duplicate' in message
+
+    def accept_alert(self):
+        alert = self.driver.switch_to.alert
+        alert.accept()
