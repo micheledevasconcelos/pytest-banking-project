@@ -16,6 +16,10 @@ test_make_withdrawl
 
 test_delete_customer
 
+test_reset_extract
+
+test_add_duplicate_customer
+
 
 # extra:
 
@@ -26,3 +30,5 @@ test_add_and_search
 test_add_and_withdrawl
 
 test_add_and_remove
+
+test_add_and_reset_transactions
