@@ -1,4 +1,4 @@
-# ETA 2023.1 - Banking Project
+# ETA 2023.1 - Testes automatizados - Python+Pytest
 https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login
 
 # Cenários mapeados:
